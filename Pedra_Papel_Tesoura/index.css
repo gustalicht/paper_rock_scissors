@@ -1,6 +1,65 @@
-.fredericka-the-great-regular {
+body{
+    background-color: black;
+}
+
+#cabecalho{
+    border: 10px solid white;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    width: 60%;
+    height:200px;
+    
+}
+h3 {
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     font-style: normal;
+    font-weight: bold;
+    color: white;
+    display:inline-block;
   }
   
+#SCORE{
+    color: white;
+    display:inline-block;
+    margin-left: 60%;
+    
+}
+
+
+#escolhas{
+    color: white;
+    height: 200px;
+    display:flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.icons{
+    font-size: 100px; /* Define o tamanho dos ícones */
+    color: white; /* Define a cor dos ícones */
+    margin: 0 5px; /* Espaçamento entre os ícones */
+}
+
+#rock{
+    border: 5px solid green;
+    border-radius: 100%;
+    background-color: green;
+    margin-left: 40%;
+}
+
+#paper{
+border: 5px solid red;
+border-radius: 100%;
+margin-bottom: 25%;
+margin-top: 20px;
+background-color: red;
+
+}
+#scissors{
+    border: 5px solid blue;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+
