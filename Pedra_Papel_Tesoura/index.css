@@ -33,27 +33,27 @@ h3 {
     height: 200px;
     display:flex;
     align-items: center; /* Centraliza verticalmente */
+    margin-left: 35%;
 }
 
 .icons{
     font-size: 100px; /* Define o tamanho dos ícones */
     color: white; /* Define a cor dos ícones */
-    margin: 0 5px; /* Espaçamento entre os ícones */
+    margin: 0 40px; /* Espaçamento entre os ícones */
 }
 
 #rock{
     border: 5px solid green;
     border-radius: 100%;
     background-color: green;
-    margin-left: 40%;
+
 }
 
 #paper{
 border: 5px solid red;
 border-radius: 100%;
-margin-bottom: 25%;
-margin-top: 20px;
 background-color: red;
+margin-bottom: 100%;
 
 }
 #scissors{
