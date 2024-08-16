@@ -3,13 +3,15 @@ body{
 }
 
 #cabecalho{
+    display: grid;
+    grid-template-rows : 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     border: 10px solid white;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
     width: 60%;
     height:200px;
-    
+    margin-bottom: 100px;
+    margin-left: 300px;
 }
 h3 {
     font-family: "Fredericka the Great", serif;
@@ -17,14 +19,16 @@ h3 {
     font-style: normal;
     font-weight: bold;
     color: white;
-    display:inline-block;
+    grid-column-start: 1 ;
   }
   
 #SCORE{
     color: white;
-    display:inline-block;
+    display:flex;
+    grid-column-start: 2;
+    grid-row-start: -4;
     margin-left: 60%;
-    
+    justify-content: space-around;
 }
 
 
@@ -32,6 +36,7 @@ h3 {
     color: white;
     height: 200px;
     display:flex;
+
     align-items: center; /* Centraliza verticalmente */
     margin-left: 35%;
 }
@@ -46,7 +51,9 @@ h3 {
     border: 5px solid green;
     border-radius: 100%;
     background-color: green;
-
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease;
 }
 
 #paper{
@@ -54,12 +61,37 @@ border: 5px solid red;
 border-radius: 100%;
 background-color: red;
 margin-bottom: 100%;
-
+cursor: pointer;
+outline: none;
+transition: transform 0.2s ease;
 }
 #scissors{
     border: 5px solid blue;
     border-radius: 100%;
     background-color: blue;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease;
 }
 
+#paper:hover{
+    transform: scale(1.1);
+}
 
+#rock:hover{
+    transform: scale(1.1);
+}
+
+#scissors:hover{
+    transform: scale(1.1);
+}
+
+#resultado {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+}
